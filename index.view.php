@@ -13,7 +13,8 @@
   <?php foreach($klase as $id => $list):?>
     <tr>
         <?php foreach($klase[$id] as $list):?>
-        <td><?if(is_array($list)){foreach($list as $suma){$sk = count($list); $val+=$suma;}echo $vid=($val/$sk); $val=0; $sk=0; $vid=0;}else{echo $list;}?></td>
+        <td><?if(is_array($list)){foreach($list as $suma){$sk = count($list); $val+=$suma;}
+        echo round($vid=($val/$sk),3); $val=0; $sk=0; $vid=0;}else{echo $list;}?></td>
         <?php endforeach ?>
     </tr>
     <?php endforeach ?>
